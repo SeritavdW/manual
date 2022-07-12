@@ -356,23 +356,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Scenario 2:</strong> In a case where the taxon is unidentifiable/ indeterminable beyond a specific taxonomic level. In this case the <em>indet</em> ON sign is applied at any taxonomic rank, e.g. <em>fam.indet.</em>, <em>sp.indet.</em> etc. This <code>identificationQualifier</code> is applied in the same way as for non-physical specimens. See <em>2. Identification based on non-physical specimens</em> - <em>Scenario 3.2</em>.</p>
 <p><strong>Scenario 3:</strong> Specimens that are new to science will be formally described in a publication using new <code>taxonrank</code> and <em>nov.</em>.</p>
 <p>Example:</p>
-<pre><code>| scientificName     | scientificNameAuthorship                 | scientificNameID                          | taxonRank | identificationQualifier | taxonConceptID             |
-|--------------------|------------------------------------------|-------------------------------------------|-----------|-------------------------|----------------------------|
-| *Pelagia*          | Péron &amp; Lesueur, 1810                    | urn:lsid:marinespecies.org:taxname:135262 | genus     | gen. nov.               | *Pelagia* gen. nov.        |
-| *Pelagia benovici* | Piraino, Aglieri, Scorrano &amp; Boero, 2014 | urn:lsid:marinespecies.org:taxname:851656 | species   | sp. nov                 | *Pelagia benovici* sp. nov |</code></pre>
+<pre><code>| scientificName   | scientificNameAuthorship                 | scientificNameID                          | taxonRank | identificationQualifier | taxonConceptID          |
+|------------------|------------------------------------------|-------------------------------------------|-----------|-------------------------|--------------------------|
+| Pelagia          | Péron &amp; Lesueur, 1810                    | urn:lsid:marinespecies.org:taxname:135262 | genus     | gen. nov.               | Pelagia gen. nov.        |
+| Pelagia benovici | Piraino, Aglieri, Scorrano &amp; Boero, 2014 | urn:lsid:marinespecies.org:taxname:851656 | species   | sp. nov                 | Pelagia benovici sp. nov |</code></pre>
 <p><strong>Scenario 4:</strong> If the new species resemble or have an affinity to a known species, the <code>identificationQualifier</code> comprise the genus name and unspecified species name and the unique code/ identifier, along with the ON sign <em>aff.</em> and the species that it resembles or shows an affinity to. This <code>identificationQualifier</code> is applied in the same way as for non-physical specimens. See <em>2. Identification based on non-physical specimens</em> - <em>Scenario 2.2</em>.</p>
 <p><strong>Scenario 5:</strong> If the new species can be compared to reference material of a known species, the <code>identificationQualifier</code> <em>cf.</em> is used.</p>
 <p>Example:</p>
-<pre><code>| scientificName | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier | taxonConceptID             |
-|----------------|--------------------------|-------------------------------------------|-----------|-------------------------|----------------------------|
-| *Gadus*        | Linnaeus, 1758           | urn:lsid:marinespecies.org:taxname:125732 | genus     | cf. *morhua*            | *Gadus* cf. *morhua*        |
-| *Polycera*     | Cuvier, 1816             | urn:lsid:marinespecies.org:taxname:138369 | genus     | cf. *hedgpethi*         | *Polycera* cf. *hedgpethi* |</code></pre>
+<pre><code>| scientificName | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier | taxonConceptID          |
+|----------------|--------------------------|-------------------------------------------|-----------|-------------------------|-------------------------|
+| Gadus          | Linnaeus, 1758           | urn:lsid:marinespecies.org:taxname:125732 | genus     | cf. morhua              | Gadus cf. morhua        |
+| Polycera       | Cuvier, 1816             | urn:lsid:marinespecies.org:taxname:138369 | genus     | cf. hedgpethi           | Polycera* cf. hedgpethi |</code></pre>
 <p><strong>Scenario 6:</strong> In case of uncertain identifications, <code>identificationQualifier</code> such as , <em>?</em> or <em>inc.</em> can be used.</p>
 <p>Example:</p>
-<pre><code>| scientificName | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier | taxonConceptID                         |
-|----------------|--------------------------|-------------------------------------------|-----------|-------------------------|----------------------------------------|
-| *Tubifex*      | Lamarck, 1816            | urn:lsid:marinespecies.org:taxname:137392 | genus     |  ?                      |*Tubifex tubifex* (Müller, 1774) ?      |
-| *Tubifex*      | Lamarck, 1816            | urn:lsid:marinespecies.org:taxname:137392 | genus     | sp. inc.                |*Tubifex tubifex* (Müller, 1774)sp. inc.|</code></pre>
+<pre><code>| scientificName | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier | taxonConceptID                       |
+|----------------|--------------------------|-------------------------------------------|-----------|-------------------------|--------------------------------------|
+| Tubifex        | Lamarck, 1816            | urn:lsid:marinespecies.org:taxname:137392 | genus     |  ?                      |Tubifex tubifex (Müller, 1774) ?      |
+| Tubifex        | Lamarck, 1816            | urn:lsid:marinespecies.org:taxname:137392 | genus     | sp. inc.                |Tubifex tubifex (Müller, 1774)sp. inc.|</code></pre>
 </div>
 <div id="identification-based-on-non-physical-specimens" class="section level6 hasAnchor">
 <h6><span class="header-section-number">2.2.1.3.3.2</span> 2. Identification based on non-physical specimens<a href="darwin_core.html#identification-based-on-non-physical-specimens" class="anchor-section" aria-label="Anchor link to header"></a></h6>
@@ -382,21 +382,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 <p><strong>Scenario 1:</strong> If a subject specimen can be identified to specie level, but not as a known species, an uncertain <code>specificEpithet</code> (species name) is given. Thus, the lowest possible, accurate taxon rank (in this case genus) should be provided in <code>taxonRank</code> with the identification of the specimen in <code>scientificName</code>. In these cases, the scientific name contain the ON sign <em>sp. inc.</em> and should be provided in <code>identificationQualifier</code> as Genus species <em>sp. inc.</em></p>
 <p>Example:</p>
-<pre><code>| scientificName          | scientificNameAuthorship | scientificNameID                           | taxonRank | identificationQualifier          |taxonConceptID                   |
-|-------------------------|--------------------------|--------------------------------------------|-----------|----------------------------------|---------------------------------|
-| *Brisinga*              | Asbjørnsen, 1856         | urn:lsid:marinespecies.org:taxname:123210  | genus     | gen. inc.                        |*Brisinga* gen. inc.             |
-| *Uroptychus compressus* | Baba &amp; Wicksten, 2019    | urn:lsid:marinespecies.org:taxname:1332465 | genus     | sp. inc.                         |*Uroptychus compressus* sp. inc. |</code></pre>
+<pre><code>| scientificName      | scientificNameAuthorship | scientificNameID                           | taxonRank | identificationQualifier          |taxonConceptID                 |
+|---------------------|--------------------------|--------------------------------------------|-----------|----------------------------------|-------------------------------|
+|Brisinga             | Asbjørnsen, 1856         | urn:lsid:marinespecies.org:taxname:123210  | genus     | gen. inc.                        |Brisinga gen. inc.             |
+|Uroptychus compressus| Baba &amp; Wicksten, 2019    | urn:lsid:marinespecies.org:taxname:1332465 | genus     | sp. inc.                         |Uroptychus compressus sp. inc. |</code></pre>
 <p><strong>Scenario 2:</strong> Taxa that are new to science/ newly described species. Non-physical specimens may or may not resemble a known species or have an affinity with a known species.</p>
 <p><strong>Scenario 2.1:</strong> If the new species does NOT resemble or have an affinity to a known species, the unique code/ identifier is provided along with the genus name and unspecified species name as <code>identificationQualifier</code> (i.e. <em>Genus sp.</em> [unique code]). For more on how OBIS recommends creating an unique qualifier, refer to the section on <a href="https://manual.obis.org/darwincore/#occurrence">Occurrence</a>.</p>
 <p>Example:</p>
-<pre><code>| scientificName | scientificNameAuthorship     | scientificNameID                          | taxonRank | identificationQualifier  |taxonConceptID                         |
-|----------------|------------------------------|-------------------------------------------|-----------|--------------------------|---------------------------------------|
-| *Eurythenes*   | S. I. Smith in Scudder, 1882 | urn:lsid:marinespecies.org:taxname:101607 | genus     |sp. DISCOLL.PAP.JC165.674 |*Eurythenes* sp. DISCOLL.PAP.JC165.674 |</code></pre>
+<pre><code>| scientificName | scientificNameAuthorship     | scientificNameID                          | taxonRank | identificationQualifier  |taxonConceptID                       |
+|----------------|------------------------------|-------------------------------------------|-----------|--------------------------|-------------------------------------|
+| Eurythenes     | S. I. Smith in Scudder, 1882 | urn:lsid:marinespecies.org:taxname:101607 | genus     |sp. DISCOLL.PAP.JC165.674 |Eurythenes sp. DISCOLL.PAP.JC165.674 |</code></pre>
 <p><strong>Scenario 2.2:</strong> If the new species resemble or have an affinity to a known species, the <code>identificationQualifier</code> comprise the genus name and unspecified species name and the unique code/ identifier, along with the ON sign <em>aff.</em> and the species that it resembles or shows an affinity to (i.e. <em>Genus sp.</em> [unique code] aff. [species it shows affinity to]).</p>
 <p>Example:</p>
-<pre><code>| scientificName | scientificNameAuthorship     | scientificNameID                         | taxonRank | identificationQualifier      |taxonConceptID                           |
-|----------------|------------------------------|------------------------------------------|-----------|------------------------------|-----------------------------------------|
-| *Paroriza*     | Hérouard, 1902               |urn:lsid:marinespecies.org:taxname:123467 | genus     |sp. [unique123] aff. *pallens*|*Paroriza* sp. [unique123] aff. *pallens*|</code></pre>
+<pre><code>| scientificName | scientificNameAuthorship     | scientificNameID                         | taxonRank | identificationQualifier    |taxonConceptID                       |
+|----------------|------------------------------|------------------------------------------|-----------|----------------------------|-------------------------------------|
+| Paroriza       | Hérouard, 1902               |urn:lsid:marinespecies.org:taxname:123467 | genus     |sp. [unique123] aff. pallens|Paroriza sp. [unique123] aff. pallens|</code></pre>
 <p><strong>Scenario 3:</strong> In cases where a subject specimen cannot accurately be identified to species level, provide the lowest possible, accurate <code>taxonRank</code> the subject can be identified as based on visual characteristics observed along with one of the following <code>identificationQualifier</code> (ON sign):</p>
 <p><strong>Scenario 3.1:</strong> The taxon is identifiable to a specific <code>taxonRank</code> with certainty, but no further identification to lower ranks were attempted. This might be due to lack of time, funds, resources, etc., use ON sign <em>stet.</em>. This <code>identificationQualifier</code> is applied in the same way for physical- and non-physical specimens.</p>
 <p>Example:</p>
@@ -405,15 +405,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 | Aristeidae     | Wood-Mason in Wood-Mason &amp; Alcock, 1891 | urn:lsid:marinespecies.org:taxname:106725 | family    | stet.                   | Aristeidae stet. | </code></pre>
 <p><strong>Scenario 3.2:</strong>. In a case where the taxon is unidentifiable/ indeterminable beyond a specific taxonomic level. This may be as a result of diagnostic characters being unavailable either due to material deterioration or damage. This scenario is equally relevant to image-based identifications, where diagnostic characters are often not visible or resolvable. In this case the <em>indet</em> ON sign is applied at any taxonomic rank, e.g. <em>fam.indet.</em>, <em>sp.indet.</em> etc. This <code>identificationQualifier</code> is applied in the same way for physical- and non-physical specimens.</p>
 <p>Example:</p>
-<pre><code>| scientificName   | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier |taxonConceptID            |
-|------------------|--------------------------|-------------------------------------------|-----------|-------------------------|--------------------------|
-| *Nematocarcinus* | Milne-Edwards, 1881      | urn:lsid:marinespecies.org:taxname:107015 | genus     | sp.indet.               |*Nematocarcinus* sp.indet.|</code></pre>
+<pre><code>| scientificName | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier |taxonConceptID          |
+|----------------|--------------------------|-------------------------------------------|-----------|-------------------------|------------------------|
+|Nematocarcinus  | Milne-Edwards, 1881      | urn:lsid:marinespecies.org:taxname:107015 | genus     | sp.indet.               |Nematocarcinus sp.indet.|</code></pre>
 <p><strong>Scenario 3.3:</strong> If a taxon is identifiable to a specific taxonomic rank, but the identification is uncertain, use the ON sign <em>inc.</em> (<em>incerta</em>). <em>incerta</em> can be used at any level of the identification (phylum inc., class inc., order inc., fam. inc., gen. inc., sp. inc.) and can be applied in both image-based identifications (all taxonomic levels) as well as with a physical specimen (likely only used at lower ranks).This ON sign should be added after the rank of uncertainty.</p>
 <p>Example:</p>
-<pre><code>| scientificName     | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier |taxonConceptID            |
-|--------------------|--------------------------|-------------------------------------------|-----------|-------------------------|--------------------------|
-| *Brisinga*         | Asbjørnsen, 1856         | urn:lsid:marinespecies.org:taxname:123210 | genus     | gen.inc.                |*Brisinga* gen.inc.       |
-| *Brisinga costata* | Verrill, 1884            | urn:lsid:marinespecies.org:taxname:17825  | species   | sp.inc.                 |*Brisinga costata* sp.inc.|</code></pre>
+<pre><code>| scientificName  | scientificNameAuthorship | scientificNameID                          | taxonRank | identificationQualifier |taxonConceptID          |
+|-----------------|--------------------------|-------------------------------------------|-----------|-------------------------|------------------------|
+|Brisinga         | Asbjørnsen, 1856         | urn:lsid:marinespecies.org:taxname:123210 | genus     | gen.inc.                |Brisinga gen.inc.       |
+|Brisinga costata | Verrill, 1884            | urn:lsid:marinespecies.org:taxname:17825  | species   | sp.inc.                 |Brisinga costata sp.inc.|</code></pre>
 </div>
 </div>
 <div id="occurrence" class="section level5 hasAnchor">

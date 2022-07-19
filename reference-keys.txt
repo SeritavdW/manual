@@ -17,10 +17,6 @@ introduction-to-darwin-core
 darwin-core-terms
 darwin-core-guidelines
 taxonomy-and-identification
-undisputed-identifications-of-known-species
-open-nomenclature-using-identificationqualifier-on-signs
-identification-based-on-physical-specimens
-identification-based-on-non-physical-specimens
 occurrence
 record-level-terms
 location

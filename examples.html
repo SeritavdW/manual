@@ -847,15 +847,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="fish-abundance-distribution" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.2</span> 2. Fish abundance &amp; distribution<a href="examples.html#fish-abundance-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>(example coming soon)</p>
+(example coming soon)
+<p>
+ 
+</p>
 </div>
 <div id="hard-coral-cover-composition" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.3</span> 3. Hard coral cover &amp; composition<a href="examples.html#hard-coral-cover-composition" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>(example coming soon)</p>
+(example coming soon)
+<p>
+ 
+</p>
 </div>
 <div id="invertebrates-abundance-distribution" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.4</span> 4. Invertebrates abundance &amp; distribution<a href="examples.html#invertebrates-abundance-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>(example coming soon)</p>
+(example coming soon)
+<p>
+ 
+</p>
 </div>
 <div id="macroalgae-canopy-cover-composition" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.5</span> 5. Macroalgae canopy cover &amp; composition<a href="examples.html#macroalgae-canopy-cover-composition" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1154,11 +1163,17 @@ Figure: A fictional macroalgae survey with a single site, multiple zones, quadra
 </div>
 <div id="mangroves-cover-composition" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.6</span> 6. Mangroves cover &amp; composition<a href="examples.html#mangroves-cover-composition" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>(example coming soon)</p>
+(example coming soon)
+<p>
+ 
+</p>
 </div>
 <div id="marine-birds-abundance-distribution" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.7</span> 7. Marine birds abundance &amp; distribution<a href="examples.html#marine-birds-abundance-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>(example coming soon)</p>
+(example coming soon)
+<p>
+ 
+</p>
 </div>
 <div id="marine-mammals-abundance-distribution" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.8</span> 8. Marine mammals abundance &amp; distribution<a href="examples.html#marine-mammals-abundance-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1923,26 +1938,31 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 </div>
 <div id="microbes-biomass-diversity" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.10</span> 10. Microbes biomass &amp; diversity<a href="examples.html#microbes-biomass-diversity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>(example coming soon)</p>
+(example coming soon)
+<p>
+ 
+</p>
 </div>
 <div id="phytoplankton-biomass-diversity" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.11</span> 11. Phytoplankton biomass &amp; diversity<a href="examples.html#phytoplankton-biomass-diversity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>This example deals with encoding phytoplankton observation data, including environmental data, into Darwin Core. Extracts from the actual data set <a href="https://ipt.vliz.be/eurobis/resource?r=fyto">LifeWatch observatory data: phytoplankton observations by imaging flow cytometry (FlowCam) in the Belgian Part of the North Sea</a>, are used as an example.</p>
+<p>This example deals with encoding phytoplankton observation data, including environmental data, into Darwin Core. Extracts from the actual data set <a href="https://obis.org/dataset/956d618f-91dc-4930-a253-cdf80ddb9371">LifeWatch observatory data: phytoplankton observations by imaging flow cytometry (FlowCam) in the Belgian Part of the North Sea</a>, are used as an example.</p>
 <p><strong>Event extension:</strong></p>
-<p>The event Extension contains events at the different levels and are linked together with <code>eventID</code> and <code>parentEventID</code>. In this example,the dataset contains records pointing to the origin, the in-situ sampling position as well as a record referring to the ex-situ collection of living specimens. In this case, the the event type information is provided in <code>type</code>. The recommended practice for providing the countryCode is to use an ISO 3166-1-alpha-2 country code. Additional information regarding licencing and institution is provided in <code>rightsHolder</code>, <code>accessRights</code>, <code>datasetName</code>, <code>institutionCode</code> and <code>ownerInstituteCode</code>. The remaining eventCore fields provide location data including <code>locationID</code>, <code>waterBody</code>, <code>maximumDepthInMeters</code>, <code>minimumDepthInMeters</code>, <code>decimalLongitude</code>, <code>decimalLatitude</code> and <code>coordinateUncertaintyInMeters</code>.</p>
+<p>The event Extension contains events at the different levels and are linked together with <code>eventID</code> and <code>parentEventID</code>. In this example,the dataset contains records pointing to the origin, the in-situ sampling position as well as a record referring to the ex-situ collection of living specimens. In this case, the the event type information is provided in <code>type</code>. The recommended practice for providing the countryCode is to use an ISO 3166-1-alpha-2 country code. If additional information regarding licencing is provided, these can be populated under <code>rightsHolder</code> and <code>accessRights</code>. The remaining eventCore fields provide location data including <code>datasetID</code> and <code>datasetName</code>, <code>locationID</code>, <code>waterBody</code>, <code>maximumDepthInMeters</code>, <code>minimumDepthInMeters</code>, <code>decimalLongitude</code>, <code>decimalLatitude</code>, <code>coordinateUncertaintyInMeters</code>, <code>geodeticDatum</code> and <code>footprintSRS</code>.</p>
 <table>
 <colgroup>
-<col width="40%" />
-<col width="22%" />
-<col width="10%" />
-<col width="27%" />
+<col width="31%" />
+<col width="17%" />
+<col width="8%" />
+<col width="30%" />
+<col width="12%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>eventID</th>
 <th>parentEventID</th>
-<th>type</th>
+<th>eventRemarks</th>
 <th>eventDate</th>
+<th>modified</th>
 </tr>
 </thead>
 <tbody>
@@ -1950,74 +1970,45 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 <td>TripNR3242</td>
 <td></td>
 <td>cruise</td>
-<td>2017-05-08T13:18Z/2017-05-11T22:14Z</td>
+<td>2017-05T13:18:00+00:00/2017-05T22:14:00+00:00</td>
+<td>2021-10-21 15:52:00</td>
 </tr>
 <tr class="even">
 <td>TripNR3242TripStationNR16781</td>
 <td>TripNR3242</td>
 <td>stationVisit</td>
-<td>2017-05-08T20:44Z/2017-05-08T20:55Z</td>
+<td>2017-05-08T20:44:00+00:00/2017-05-08T20:55:00+00:00</td>
+<td>2021-10-21 15:52:00</td>
 </tr>
 <tr class="odd">
 <td>TripNR3242TripStationNR16781MidasTripActionID105598</td>
 <td>TripNR3242TripStationNR16781</td>
 <td>sample</td>
-<td>2017-05-08T20:50Z</td>
+<td>2017-05-08T20:50:00+00:00</td>
+<td>2021-10-21 15:52:00</td>
 </tr>
 <tr class="even">
 <td>TripNR3242TripStationNR16781MidasTripActionID105598UW</td>
 <td>TripNR3242TripStationNR16781</td>
 <td>sample</td>
-<td>2017-05-08T20:50Z</td>
+<td>2017-05-08T20:50:00+00:00</td>
+<td>2021-10-21 15:52:00</td>
 </tr>
 </tbody>
 </table>
 <table>
 <colgroup>
-<col width="19%" />
-<col width="10%" />
-<col width="19%" />
-<col width="51%" />
+<col width="27%" />
+<col width="40%" />
+<col width="8%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>rightsHolder</th>
-<th>accessRights</th>
-<th>institutionCode</th>
+<th>datasetID</th>
 <th>datasetName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Flanders Marine Institute</td>
-<td>CC-BY 4.0</td>
-<td>Flanders Marine Institute</td>
-<td>LifeWatch observatory data: phytoplankton observations by imaging flow</td>
-</tr>
-<tr class="even">
-<td>Flanders Marine Institute</td>
-<td>CC-BY 4.0</td>
-<td>Flanders Marine Institute</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Flanders Marine Institute</td>
-<td>CC-BY 4.0</td>
-<td>Flanders Marine Institute</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Flanders Marine Institute</td>
-<td>CC-BY 4.0</td>
-<td>Flanders Marine Institute</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th>ownerInstitutionCode</th>
 <th>locationID</th>
 <th>waterBody</th>
 <th>country</th>
@@ -2026,28 +2017,32 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 </thead>
 <tbody>
 <tr class="odd">
-<td>Flanders Marine Institute</td>
+<td><a href="https://marineinfo.org/id/dataset/4688" class="uri">https://marineinfo.org/id/dataset/4688</a></td>
+<td>LifeWatch observatory data: phytoplankton observations…</td>
 <td></td>
 <td>North Sea</td>
 <td>Belgium</td>
-<td>Be</td>
+<td>BE</td>
 </tr>
 <tr class="even">
-<td>Flanders Marine Institute</td>
+<td><a href="https://marineinfo.org/id/dataset/4688" class="uri">https://marineinfo.org/id/dataset/4688</a></td>
+<td></td>
 <td>JN17_5</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Flanders Marine Institute</td>
+<td><a href="https://marineinfo.org/id/dataset/4688" class="uri">https://marineinfo.org/id/dataset/4688</a></td>
+<td></td>
 <td>JN17_5</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Flanders Marine Institute</td>
+<td><a href="https://marineinfo.org/id/dataset/4688" class="uri">https://marineinfo.org/id/dataset/4688</a></td>
+<td></td>
 <td>JN17_5</td>
 <td></td>
 <td></td>
@@ -2057,11 +2052,13 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 </table>
 <table>
 <colgroup>
-<col width="20%" />
-<col width="20%" />
 <col width="15%" />
-<col width="16%" />
-<col width="28%" />
+<col width="15%" />
+<col width="12%" />
+<col width="12%" />
+<col width="10%" />
+<col width="22%" />
+<col width="10%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -2069,7 +2066,9 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 <th>maximumDepthInMeters</th>
 <th>decimalLatitude</th>
 <th>decimalLongitude</th>
+<th>geodeticDatum</th>
 <th>coordinateUncertaintyInMeters</th>
+<th>footprintSRS</th>
 </tr>
 </thead>
 <tbody>
@@ -2078,28 +2077,36 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 <td></td>
 <td></td>
 <td></td>
-<td>NA</td>
+<td>EPSG:4326</td>
+<td></td>
+<td>EPSG:4326</td>
 </tr>
 <tr class="even">
 <td>0</td>
 <td>30.22</td>
 <td>51.0131</td>
 <td>1.90562</td>
+<td>EPSG:4326</td>
 <td>1.11</td>
+<td>EPSG:4326</td>
 </tr>
 <tr class="odd">
 <td>0</td>
 <td>1</td>
 <td>51.01203</td>
 <td>1.90217</td>
+<td>EPSG:4326</td>
 <td>1.11</td>
+<td>EPSG:4326</td>
 </tr>
 <tr class="even">
 <td>3</td>
 <td>3</td>
 <td>51.01203</td>
 <td>1.90217</td>
+<td>EPSG:4326</td>
 <td>1.11</td>
+<td>EPSG:4326</td>
 </tr>
 </tbody>
 </table>
@@ -2155,35 +2162,35 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 <tbody>
 <tr class="odd">
 <td>2021-10-21</td>
-<td>MaterialSample</td>
+<td>Occurrence</td>
 <td>absent</td>
 <td><a href="urn:lsid:marinespecies.org:taxname:160560" class="uri">urn:lsid:marinespecies.org:taxname:160560</a></td>
 <td>Hydrodictyaceae</td>
 </tr>
 <tr class="even">
 <td>2021-10-21</td>
-<td>MaterialSample</td>
+<td>Occurrence</td>
 <td>present</td>
 <td><a href="urn:lsid:marinespecies.org:taxname:148948" class="uri">urn:lsid:marinespecies.org:taxname:148948</a></td>
 <td>Actinoptychus senarius</td>
 </tr>
 <tr class="odd">
 <td>2021-10-21</td>
-<td>MaterialSample</td>
+<td>Occurrence</td>
 <td>present</td>
 <td><a href="urn:lsid:marinespecies.org:taxname:148949" class="uri">urn:lsid:marinespecies.org:taxname:148949</a></td>
 <td>Actinoptychus splendens</td>
 </tr>
 <tr class="even">
 <td>2021-10-21</td>
-<td>MaterialSample</td>
+<td>Occurrence</td>
 <td>present</td>
 <td><a href="urn:lsid:marinespecies.org:taxname:148947" class="uri">urn:lsid:marinespecies.org:taxname:148947</a></td>
 <td>Actinoptychus</td>
 </tr>
 </tbody>
 </table>
-<p><strong>extendedMeasurementOrFact (eMoF) extension</strong></p>
+<p><strong>extendedMeasurementOrFact (eMoF) extension:</strong></p>
 <p>The eMoF extension contains the environmental and measurement information and data of each occurrence. This extension is also linked to the eventCore using the <code>eventID</code>, and linked to the occurrence table using the <code>occurrenceID</code>. The various measurements are populated with <code>measurementID</code>, <code>measurementType</code>, <code>measurementTypeID</code>, <code>measurementUnit</code>, <code>measurementUnitID</code>, <code>measurementValue</code>, <code>measurementValueID</code>, <code>measurementAccuracy</code>, <code>measurementMethod</code>, <code>measurementDeterminedBy</code> and <code>measurementDeterminedDate</code>. In the example dataset,the LifeWatch observatory data was compiled using imaging flow cytometry (FlowCam) to observe and identify phytoplankton in the Belgian Part of the North Sea and recorded a number of measurements including abundance, lifestages, sampling device information as well as environmental measurements such as water termperature, slainity and conductivity with accompanying vocabulary.</p>
 <table>
 <colgroup>
@@ -2589,7 +2596,7 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 </tbody>
 </table>
 <p><strong>extendedMeasurementOrFact (eMoF) extension:</strong></p>
-<p>The rMoF table contains the measurement information and data of each occurrence. This extension is also linked to the eventCore using the <code>eventID</code>, and linked to the occurrence table using the <code>occurrenceID</code>. The various measurements are populated with <code>measurementType</code>, <code>measurementTypeID</code>, <code>measurementUnit</code>, <code>measurementUnitID</code>, <code>measurementValue</code>, <code>measurementValueID</code>, <code>measurementAccuracy</code>, <code>measurementMethod</code>, <code>measurementDeterminedBy</code> and <code>measurementDeterminedDate</code>. The example dataset of <a href="http://ipt.iobis.org/caribbeanobis/resource?r=seagrasssurvey_colombia">Seagrass Monitoring at Chengue Bay, Colombia</a> recorded a number of measurements and can be used as an example of how to populate the respective fields:</p>
+<p>The eMoF table contains the measurement information and data of each occurrence. This extension is also linked to the eventCore using the <code>eventID</code>, and linked to the occurrence table using the <code>occurrenceID</code>. The various measurements are populated with <code>measurementType</code>, <code>measurementTypeID</code>, <code>measurementUnit</code>, <code>measurementUnitID</code>, <code>measurementValue</code>, <code>measurementValueID</code>, <code>measurementAccuracy</code>, <code>measurementMethod</code>, <code>measurementDeterminedBy</code> and <code>measurementDeterminedDate</code>. The example dataset of <a href="http://ipt.iobis.org/caribbeanobis/resource?r=seagrasssurvey_colombia">Seagrass Monitoring at Chengue Bay, Colombia</a> recorded a number of measurements and can be used as an example of how to populate the respective fields:</p>
 <table>
 <colgroup>
 <col width="18%" />
@@ -2773,7 +2780,387 @@ Figure: A representation of the observation events of <a href="http://ipt.vliz.b
 </div>
 <div id="zooplankton-biomass-diversity" class="section level4 hasAnchor">
 <h4><span class="header-section-number">2.2.4.13</span> 13. Zooplankton biomass &amp; diversity<a href="examples.html#zooplankton-biomass-diversity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>(example coming soon)</p>
+<p>Here we will encode zooplankton observation and environmental data into Darwin Core. Extracts from the actual dataset <a href="https://obis.org/dataset/afa5b0e8-826d-4433-b698-beb176ef7880">LifeWatch observatory data: zooplankton observations by imaging (ZooScan) in the Belgian Part of the North Sea</a>, are used as an example.</p>
+<p><strong>Event extension:</strong></p>
+<p>The event Extension contains events at the different levels and are linked together with <code>eventID</code> and <code>parentEventID</code>. In this example,the dataset contains records pointing to the origin, the in-situ sampling position as well as a record referring to the ex-situ collection of living specimens. In this case, the the event type information is provided in <code>type</code>. The recommended practice for providing the countryCode is to use an ISO 3166-1-alpha-2 country code. If additional information regarding licencing is provided, these can be populated under <code>rightsHolder</code> and <code>accessRights</code>. The remaining eventCore fields provide location data including <code>datasetID</code> and <code>datasetName</code>, <code>locationID</code>, <code>waterBody</code>, <code>maximumDepthInMeters</code>, <code>minimumDepthInMeters</code>, <code>decimalLongitude</code>, <code>decimalLatitude</code>, <code>coordinateUncertaintyInMeters</code>, <code>geodeticDatum</code> and <code>footprintSRS</code>.</p>
+<table>
+<colgroup>
+<col width="31%" />
+<col width="17%" />
+<col width="8%" />
+<col width="31%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>eventID</th>
+<th>parentEventID</th>
+<th>eventRemarks</th>
+<th>eventDate</th>
+<th>modified</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TripNR2547</td>
+<td></td>
+<td>cruise</td>
+<td>2013-07-22T06:58:00+00:00/2013-07-22T16:58:00+00:00</td>
+<td>2021-06-23 14:54:00</td>
+</tr>
+<tr class="even">
+<td>TripNR2547TripStationNR9781</td>
+<td>TripNR2547</td>
+<td>stationVisit</td>
+<td>2013-07-22T07:13:00+00:00/2013-07-22T07:26:00+00:00</td>
+<td>2021-06-23 14:54:00</td>
+</tr>
+<tr class="odd">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024</td>
+<td>TripNR2547TripStationNR9781</td>
+<td>sample</td>
+<td>2013-07-22T07:22:00+00:00</td>
+<td>2021-06-23 14:54:00</td>
+</tr>
+<tr class="even">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024UW</td>
+<td>TripNR2547TripStationNR9781</td>
+<td>sample</td>
+<td>2013-07-22T07:22:00+00:00</td>
+<td>2021-06-23 14:54:00</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="26%" />
+<col width="38%" />
+<col width="8%" />
+<col width="20%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>datasetID</th>
+<th>datasetName</th>
+<th>locationID</th>
+<th>waterBody</th>
+<th>country</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://marineinfo.org/id/dataset/4687" class="uri">https://marineinfo.org/id/dataset/4687</a></td>
+<td>LifeWatch observatory data: zooplankton observations…</td>
+<td></td>
+<td>Belgian Part of the North Sea</td>
+<td>Belgium</td>
+</tr>
+<tr class="even">
+<td><a href="https://marineinfo.org/id/dataset/4687" class="uri">https://marineinfo.org/id/dataset/4687</a></td>
+<td>LifeWatch observatory data: zooplankton observations…</td>
+<td>130</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://marineinfo.org/id/dataset/4687" class="uri">https://marineinfo.org/id/dataset/4687</a></td>
+<td>LifeWatch observatory data: zooplankton observations…</td>
+<td>130</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="https://marineinfo.org/id/dataset/4687" class="uri">https://marineinfo.org/id/dataset/4687</a></td>
+<td>LifeWatch observatory data: zooplankton observations…</td>
+<td>130</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="15%" />
+<col width="16%" />
+<col width="13%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>minimumDepthInMeters</th>
+<th>maximumDepthInMeters</th>
+<th>decimalLatitude</th>
+<th>decimalLongitude</th>
+<th>geodeticDatum</th>
+<th>footprintSRS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>EPSG:4326</td>
+<td>EPSG:4326</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>13.4</td>
+<td>51.27083333</td>
+<td>2.905</td>
+<td>EPSG:4326</td>
+<td>EPSG:4326</td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>51.2687318</td>
+<td>2.901797</td>
+<td>EPSG:4326</td>
+<td>EPSG:4326</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>3</td>
+<td>51.2687318</td>
+<td>2.901797</td>
+<td>EPSG:4326</td>
+<td>EPSG:4326</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Occurrence extension:</strong></p>
+<p>The occurrence extension contains data of each occurrence with an <code>occurrenceID</code> and is linked to the event extension with the <code>eventID</code>. The occurrence extension should provide information on the <code>basisOfRecord</code> and <code>occurrenceStatus</code>. Scientific names and links to the World Register of Marine Species should be provided under <code>scientificName</code> and <code>scientificNameID</code>, respectively.</p>
+<table>
+<colgroup>
+<col width="35%" />
+<col width="64%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>eventID</th>
+<th>occurrenceID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024</td>
+<td>TripNR2547TripStationNR9781MidasTripActionID23024occurenceIDTA23024_Amphipoda_sub2_130</td>
+</tr>
+<tr class="even">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024</td>
+<td>TripNR2547TripStationNR9781MidasTripActionID23024occurenceIDTA23024_Annelida_sub2_130</td>
+</tr>
+<tr class="odd">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024</td>
+<td>TripNR2547TripStationNR9781MidasTripActionID23024occurenceIDTA23024_Anomura_sub2_130</td>
+</tr>
+<tr class="even">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024</td>
+<td>TripNR2547TripStationNR9781MidasTripActionID23024occurenceIDTA23024_Appendicularia_sub2_130</td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<colgroup>
+<col width="11%" />
+<col width="14%" />
+<col width="17%" />
+<col width="41%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>modified</th>
+<th>basisOfRecord</th>
+<th>occurrenceStatus</th>
+<th>scientificNameID</th>
+<th>scientificName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2021-06-22</td>
+<td>Occurrence</td>
+<td>absent</td>
+<td><a href="urn:lsid:marinespecies.org:taxname:1135" class="uri">urn:lsid:marinespecies.org:taxname:1135</a></td>
+<td>Amphipoda</td>
+</tr>
+<tr class="even">
+<td>2021-06-22</td>
+<td>Occurrence</td>
+<td>present</td>
+<td><a href="urn:lsid:marinespecies.org:taxname:882" class="uri">urn:lsid:marinespecies.org:taxname:882</a></td>
+<td>Annelida</td>
+</tr>
+<tr class="odd">
+<td>2021-06-22</td>
+<td>Occurrence</td>
+<td>absent</td>
+<td><a href="urn:lsid:marinespecies.org:taxname:106671" class="uri">urn:lsid:marinespecies.org:taxname:106671</a></td>
+<td>Anomura</td>
+</tr>
+<tr class="even">
+<td>2021-06-22</td>
+<td>Occurrence</td>
+<td>absent</td>
+<td><a href="urn:lsid:marinespecies.org:taxname:146421" class="uri">urn:lsid:marinespecies.org:taxname:146421</a></td>
+<td>Appendicularia</td>
+</tr>
+</tbody>
+</table>
+<p><strong>extendedMeasurementOrFact (eMoF) extension:</strong></p>
+<p>The eMoF table contains the measurement information and data of each occurrence. This extension is also linked to the eventCore using the <code>eventID</code>, and linked to the occurrence table using the <code>occurrenceID</code>. The various measurements are populated with <code>measurementType</code>, <code>measurementTypeID</code>, <code>measurementUnit</code>, <code>measurementUnitID</code>, <code>measurementValue</code>, <code>measurementValueID</code>, <code>measurementAccuracy</code>, <code>measurementMethod</code>, <code>measurementDeterminedBy</code> and <code>measurementDeterminedDate</code>. The example dataset of <a href="https://obis.org/dataset/afa5b0e8-826d-4433-b698-beb176ef7880">LifeWatch observatory data: zooplankton observations by imaging (ZooScan) in the Belgian Part of the North Sea</a> recorded some ENV-DATA and organism measurements the can be used as an example of how to populate the respective fields, including conductivity of the water body; concentration of chlorophyll-a per unit volume of the water body; sampling instrument name; sampling net mesh size; lifestage of the organism observed; and abundance of the organism observed.</p>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="35%" />
+<col width="41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>id</th>
+<th>occurrenceID</th>
+<th>measurementType</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TripNR3256TripStationNR17157MidasTripActionID106326</td>
+<td></td>
+<td>Sampling instrument name</td>
+</tr>
+<tr class="even">
+<td>TripNR3256TripStationNR17157MidasTripActionID106326</td>
+<td></td>
+<td>Sampling net mesh size</td>
+</tr>
+<tr class="odd">
+<td>TripNR3529TripStationNR19242MidasTripActionID109631UW</td>
+<td></td>
+<td>Conductivity of the water body</td>
+</tr>
+<tr class="even">
+<td>TripNR3529TripStationNR19243MidasTripActionID109634</td>
+<td></td>
+<td>Concentration of chlorophyll-a per unit volume of the water body</td>
+</tr>
+<tr class="odd">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024</td>
+<td>TripNR2547TripStationNR9781MidasTripActionID23024occurenceIDTA23024_Annelida_sub2_130</td>
+<td>Lifestage</td>
+</tr>
+<tr class="even">
+<td>TripNR2547TripStationNR9781MidasTripActionID23024</td>
+<td>TripNR2547TripStationNR9781MidasTripActionID23024occurenceIDTA23024_Annelida_sub2_130</td>
+<td>Abundance of Annelida (ITIS: 64357: WoRMS 882) per unit volume of the water body by image analysis</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="37%" />
+<col width="11%" />
+<col width="37%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>measurementTypeID</th>
+<th>measurementValue</th>
+<th>measurementValueID</th>
+<th>measurementUnit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://vocab.nerc.ac.uk/collection/Q01/current/Q0100002/" class="uri">http://vocab.nerc.ac.uk/collection/Q01/current/Q0100002/</a></td>
+<td>Planktonnet WP2</td>
+<td><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0979/" class="uri">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0979/</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="http://vocab.nerc.ac.uk/collection/Q01/current/Q0100015/" class="uri">http://vocab.nerc.ac.uk/collection/Q01/current/Q0100015/</a></td>
+<td>200</td>
+<td></td>
+<td>micrometer</td>
+</tr>
+<tr class="odd">
+<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01/" class="uri">http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01/</a></td>
+<td>4.05</td>
+<td></td>
+<td>Siemens per metre</td>
+</tr>
+<tr class="even">
+<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/CPHLHPP1/" class="uri">http://vocab.nerc.ac.uk/collection/P01/current/CPHLHPP1/</a></td>
+<td>1.42</td>
+<td></td>
+<td>Micrograms per litre</td>
+</tr>
+<tr class="odd">
+<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/" class="uri">http://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/</a></td>
+<td>unspecified</td>
+<td><a href="http://vocab.nerc.ac.uk/collection/S11/current/S1152/" class="uri">http://vocab.nerc.ac.uk/collection/S11/current/S1152/</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/SDBIOL01/" class="uri">http://vocab.nerc.ac.uk/collection/P01/current/SDBIOL01/</a></td>
+<td>0.50</td>
+<td></td>
+<td>specimens/m³</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="10%" />
+<col width="68%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>measurementUnitID</th>
+<th>measurementDeterminedBy</th>
+<th>measurementMethod</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="http://vocab.nerc.ac.uk/collection/P06/current/UMIC/" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/UMIC/</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="http://vocab.nerc.ac.uk/collection/P06/current/UECA/" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/UECA/</a></td>
+<td>Flanders Marine Institute</td>
+<td>Electrical conductivity of the water body by thermosalinograph, based on the UnderWaySystem of the ship</td>
+</tr>
+<tr class="even">
+<td><a href="http://vocab.nerc.ac.uk/collection/P06/current/UGPL/" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/UGPL/</a></td>
+<td>Flanders Marine Institute</td>
+<td>Concentration of chlorophyll-a per unit volume of the water body [particulate &gt;GF/F phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Flanders Marine Institute</td>
+<td>identified and counted by image analysis and normalised to a unit volume of water body, validated by human</td>
+</tr>
+<tr class="even">
+<td><a href="http://vocab.nerc.ac.uk/collection/P06/current/UPMM/" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/UPMM/</a></td>
+<td>Flanders Marine Insitute</td>
+<td>identified and counted by image analysis and normalised to a unit volume of water body, validated by human</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>

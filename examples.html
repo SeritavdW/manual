@@ -1366,13 +1366,13 @@ Figure: A fictional macroalgae survey with a single site, multiple zones, quadra
 </tbody>
 </table>
 <p><strong>extendedMeasurementOrFact (eMoF) extension:</strong></p>
-<p>As shown in previous examples, the MeasurementOrFact extension table contains abiotic meaasurements or facts corresponding to an occurrence / sighting. Individual sightings and abiotic measurements are linked with <code>occurrenceID</code>. In the example dataset, the ENV-DATA consist of measurements taken during the moorings deployment at the SOTS site, at the time of the marine bird sightings. In addition to NERC vocabulary terms, authors also referenced the Australian Ocean Data Network (AODN) Discovery Parameter Vocabulary for <em>Depth</em> and <em>Sea Surface Temperature</em> as <code>measurementType</code>.</p>
+<p>As shown in previous examples, the MeasurementOrFact extension table contains abiotic measurements or facts corresponding to an occurrence / sighting. Individual sightings and abiotic measurements are linked with <code>occurrenceID</code>. In the example dataset, the ENV-DATA consist of measurements taken during the moorings deployment at the SOTS site, at the time of the marine bird sightings. In addition to NERC vocabulary terms, authors also referenced the Australian Ocean Data Network (AODN) Discovery Parameter Vocabulary for <em>Sea-floor depth (m)</em> and <em>Sea Surface Temperature</em> as <code>measurementType</code>. NERC equivalents to the AODN terms are added as additional MeasurementOrFact (MoF) records.</p>
 <table>
 <colgroup>
 <col width="12%" />
 <col width="23%" />
 <col width="22%" />
-<col width="41%" />
+<col width="42%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1386,32 +1386,44 @@ Figure: A fictional macroalgae survey with a single site, multiple zones, quadra
 <tr class="odd">
 <td>in2017_v02_00998</td>
 <td>in2017_v02_00998-depth</td>
-<td>Depth (m)</td>
+<td>Sea-floor depth (m)</td>
 <td><a href="http://vocab.aodn.org.au/def/discovery_parameter/entity/574" class="uri">http://vocab.aodn.org.au/def/discovery_parameter/entity/574</a></td>
 </tr>
 <tr class="even">
+<td>in2017_v02_00998</td>
+<td>in2017_v02_00998-depth</td>
+<td>Sea-floor depth</td>
+<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/MBANZZZZ/" class="uri">http://vocab.nerc.ac.uk/collection/P01/current/MBANZZZZ/</a></td>
+</tr>
+<tr class="odd">
 <td>in2017_v02_00998</td>
 <td>in2017_v02_00998-air_pressure</td>
 <td>Air Pressure (hPa)</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/P01/current/CAPHZZ01" class="uri">http://vocab.nerc.ac.uk/collection/P01/current/CAPHZZ01</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>in2017_v02_00998</td>
 <td>in2017_v02_00998-air_temp</td>
 <td>Atmospheric temperature (deg C)</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/P01/current/CTMPZZ01" class="uri">http://vocab.nerc.ac.uk/collection/P01/current/CTMPZZ01</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>in2017_v02_00998</td>
 <td>in2017_v02_00998-wov_sea_state</td>
 <td>Sea state</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/C39/current/" class="uri">http://vocab.nerc.ac.uk/collection/C39/current/</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>in2017_v02_00998</td>
 <td>in2017_v02_00998-sea_surface_temp</td>
 <td>Sea surface temperature</td>
 <td><a href="http://vocab.aodn.org.au/def/discovery_parameter/entity/97" class="uri">http://vocab.aodn.org.au/def/discovery_parameter/entity/97</a></td>
+</tr>
+<tr class="odd">
+<td>in2017_v02_00998</td>
+<td>in2017_v02_00998-sea_surface_temp</td>
+<td>Sea surface temperature</td>
+<td><a href="http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/" class="uri">http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/</a></td>
 </tr>
 <tr class="even">
 <td>in2017_v02_00998</td>
@@ -1450,22 +1462,34 @@ Figure: A fictional macroalgae survey with a single site, multiple zones, quadra
 <td><a href="http://vocab.nerc.ac.uk/collection/P06/current/ULAA" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/ULAA</a></td>
 </tr>
 <tr class="even">
+<td>73.0313</td>
+<td>NA</td>
+<td>Metres</td>
+<td><a href="http://vocab.nerc.ac.uk/collection/P06/current/ULAA" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/ULAA</a></td>
+</tr>
+<tr class="odd">
 <td>1024.91385</td>
 <td>NA</td>
 <td>hPa</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/P06/current/HPAX" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/HPAX</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>15.3</td>
 <td>NA</td>
 <td>degrees Celsius</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/P06/current/UPAA" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/UPAA</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>moderate 1.25 - 2.5 m</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/C39/current/4/" class="uri">http://vocab.nerc.ac.uk/collection/C39/current/4/</a></td>
 <td></td>
 <td></td>
+</tr>
+<tr class="even">
+<td>17.32</td>
+<td>NA</td>
+<td>degrees Celsius</td>
+<td><a href="http://vocab.nerc.ac.uk/collection/P06/current/UPAA" class="uri">http://vocab.nerc.ac.uk/collection/P06/current/UPAA</a></td>
 </tr>
 <tr class="odd">
 <td>17.32</td>
